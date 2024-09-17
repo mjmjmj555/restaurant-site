@@ -51,13 +51,7 @@ $('#this-year').text('2024 - '+fullYear);
 $('#this-year').text(fullYear);
 }
 
-//多言語のリダイレクト
-$('#btn-ja').href = 'http://mjmjmj555.github.io/restaurant-site-multi/';
-});
-//イタリア語のリダイレクト
-$('#btn-it').href = '';
-//英語のリダイレクト
-$('#btn-en').href = '';
+
 
 });
 

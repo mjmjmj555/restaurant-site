@@ -519,11 +519,10 @@ text-decoration: underline;
 
 
 /* 多言語化部分 */
-body{
-padding-top: 60px;
-}
+
 #hum-btn{
-top: 60px;
+top: 56px;
+background-color: #fff;
 }
 .lang-btn{
 display: flex;
