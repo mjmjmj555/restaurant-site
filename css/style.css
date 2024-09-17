@@ -148,6 +148,8 @@ height: 240px;
 }
 /* メインコピー部分 */
 .main-copy{
+    max-width: 680px;
+    margin: 0 auto;
 text-align: center;
 padding: 150px 10px;
 font-family: var(--font_ja);
@@ -512,5 +514,31 @@ text-align: center;
 color: var(--text_color);
 &:hover{
 text-decoration: underline;
+}
+}
+
+
+/* 多言語化部分 */
+body{
+padding-top: 60px;
+}
+#hum-btn{
+top: 60px;
+}
+.lang-btn{
+display: flex;
+gap: 0 15px;
+margin-top: 20px;
+>li:nth-of-type(-n+2)::after{
+content:"|";
+margin-left: 15px;
+color: var(--text_color);
+}
+a{
+color: var(--text_color);
+&:hover{
+text-decoration: underline 2px;
+text-underline-offset: 2px;
+}
 }
 }

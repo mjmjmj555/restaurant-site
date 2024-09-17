@@ -1,12 +1,12 @@
 //vegasの呼び出し
 $('#main-visual').vegas({
 slides: [
-{src: "../img/main-00.webp"},
-{src: "../img/main-1.webp"},
-{src: "../img/main-01.webp"},
-{src: "../img/main-2.webp"},
-{src: "../img/main-4.webp"},
-{src: "../img/main-3.webp"},
+{src: "img/main-00.webp"},
+{src: "img/main-1.webp"},
+{src: "img/main-01.webp"},
+{src: "img/main-2.webp"},
+{src: "img/main-4.webp"},
+{src: "img/main-3.webp"},
 ],
 timer: false,
 transition: 'fade2',
@@ -32,7 +32,7 @@ $('#ham-btn').removeClass('is-active');
 });
 
 //ajaxで外部データを呼び出す
-$('#news-list').load('restaurant-site/news.txt');
+$('#news-list').load('news.txt');
 
 //カルーセル
 $('.bxslider').bxSlider({
@@ -50,6 +50,14 @@ $('#this-year').text('2024 - '+fullYear);
 }else{
 $('#this-year').text(fullYear);
 }
+
+//多言語のリダイレクト
+$('#btn-ja').href = 'http://mjmjmj555.github.io/restaurant-site-multi/';
+});
+//イタリア語のリダイレクト
+$('#btn-it').href = '';
+//英語のリダイレクト
+$('#btn-en').href = '';
 
 });
 
